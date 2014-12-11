@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device,initial-scale=1.0" />
+    <title>{block:PostTitle}{PostTitle}Brooke Bell{/block:PostTitle}{Title}</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <style>
+      body{ 
+          background-color:black;
+          font-syle:"Montserrat";
+          color:white;
+      }
+        h1{
+          color:white;
+          text-align:center;
+          font-size:2.0em;
+        }
+        @media only screen and (min-width : 20em) { /*320px */
+        font-size:0.667em;
+        word-wrap:"break-word";
+        }
+      .post-text{
+        background-color:black;
+        font-style:"Montserrat";
+        font-size:1.0em;
+        color:white;
+      }
+      .post-text{
+          @media only screen and (min-width : 20em) { /*320px */
+          font-size:0.5em;
+          word-wrap:"break-word";
+          }
+          }
+      .post-quote{
+        background-color:black;
+        font-style:"Courgette";
+        font-size:0.5em;
+        color:white;
+      }
+      .post-quote{@media only screen and (min-width : 20em) { /*320px */
+        font-size:0.5em;
+        word-wrap:"break-word";
+      }
+      }
+      </style>
+  <body>
+    <header>
+      <h1>Brooke Bell</h1>
+      <div class="main">
+        {block:Posts}
+        {block:Text}
+      <div class="post-text">
+          {block:Title}
+          <h1>
+            The Shameful Introduction Post!
+          </h1>
+          {/block:Title}
+            <p>Welcome to my blog! I am currently a third year university student. I love reading and writing, traveling, and sports. Sports are my passion. I have played basketball at the collegiate level for the past three years. I have worked with Ron Hopkins from Swoosh Canada BasketballI would like to share motivational quotes as well as tips, tricks, and tools that will inspire and push others to reach their peak performance.
+            </p>
+        </div>
+        {/block:Post}
+        {/block:Text}
+        {block:Quote} 
+        <div class="post-quote">
+          <p>A lot of late nights in the gym, a lot of early mornings, especially when your friends are going out, you're going to the gym, those are the sacrifices that you have to make if you want to be an NBA basketball player. -Jason Kidd
+          </p>
+        </div>
+        {/block:Quote}
+      </div>
+    </header>
+  </body>
+  </style>    
+  </head>  
+</html>
